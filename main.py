@@ -6,7 +6,7 @@ pygame.init()
 
 sw,ash = 500,650
 sh = 500
-tile_size = 50
+tile_size = 25
 clock = pygame.time.Clock()
 screen = pygame.display.set_mode((sw,ash))
 pygame.display.set_caption("Game of life")
@@ -135,7 +135,7 @@ while on :
     gen_transp_surf = pygame.Surface((generation_surface.get_width()+10,generation_surface.get_height()+10),pygame.SRCALPHA)
     gen_transp_surf.fill((27,27,27,128))    
    
-    #show texts,images on the screen
+    #display texts,images on the screen
     screen.fill((255,255,255))
     screen.blit(panel_img,(0,sh))
     screen.blit(gen_transp_surf,(5,sh+generation_surface.get_height()))
